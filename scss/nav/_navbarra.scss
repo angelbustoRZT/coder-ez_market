@@ -1,73 +1,66 @@
-nav {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 10%;
+
+.nav {
     background: linear-gradient(90deg,#013c79 0%, #005fda 50%, #013c79 100%);
     background: -webkit-linear-gradient(90deg,#013c79 0%, #005fda 50%, #013c79 100%);
     background: -moz-linear-gradient(90deg,#013c79 0%, #005fda 50%, #013c79 100%);
     background-color: #013c79;
     box-shadow: 0 0 7px 0 rgb(255, 255, 255);
-    width: 100%;
-    z-index: 99;
+    height: 100px;
+    color: black;
     position: fixed;
+    width: 100%;
 }
-.titulo {
-    font-family: Masque;
+
+.nav_container {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    font-size: 1.5em;
     font-weight: 900;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    font-size: 20px;
-}
-
-.logo {
-    color: black;
-    height: 40px;
-
-}
-
-.nav_links {
-    text-decoration: none;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 20px;
-    li {
-        border-radius: 3px;
-        margin: 0 20px;
-        a {
-            padding: 10px 15px;
-        }
-    }
-}
-.link {
     a {
-    font-size: 18px;
-    position: relative;
-    color: black;
-    font-family: Masque;
+        color: black;
     }
 }
-.carrito {
 
-    display: flex;
-    background-color: transparent;
-    border: none;
-    text-align: center;
-    flex-direction: column;
+.nav_menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
     align-items: center;
-    justify-content: center;
-    height: 50px;
-    cursor: pointer;
 }
 
-.imgcarrito {
-    width: 50px;
-    height: 50px;
+.nav_item {
+    color: black;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav_item::after {
+    content: "";
+    display: block;
+    background: black;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+
+.nav_item:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav_label, .nav_input {
+    display: none;
+}
+
+.carrito_img {
+    height: 40px;
+    width: 40px;
 }

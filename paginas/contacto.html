@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ez-Market</title>
+    <title>Ez-Market - Contacto</title>
     <link rel="shortcut icon" href="../imagenes/logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/main.css">
@@ -12,59 +12,49 @@
 </head>
 <body class="fondo">
     <header>
-        <nav>
-            <article class="titulo">
-                <a href="../index.html">
-                    <h1 class="logo">Ez-Market</h1>
-                </a>
-            </article>
-            <ul class="nav_links">
-                <li class="link">
-                    <a class="active" href="../index.html">
-                        Inicio
-                    </a>
-                </li>
-                <li class="link">
-                    <a class="active" href="redes.html">
-                        Redes
-                    </a>
-                </li>
-                <li class="link">
-                    <a class="active" href="contacto.html">
-                        Contacto
-                    </a>
-                </li>
-            </ul>
-            <article class="carrito">
-                <a href="carrito.html">
-                    <img src="../imagenes/carrito.png" class="imgcarrito">
-                </a>
-            </article>
+        <nav class="nav">
+            <div class="nav_container">
+                <h1 class="nav_logo">
+                    <a href="../index.html">Ez-Market</a>
+                </h1>
+                <label for="menu" class="nav_label">
+                    <img src="../imagenes/menu.svg" alt="#" class="nav_img">
+                </label>
+                <input type="checkbox" id="menu" class="nav_input">
+                <div class="nav_menu">
+                    <a href="../index.html" class="nav_item">Inicio</a>
+                    <a href="../paginas/redes.html" class="nav_item">Redes</a>
+                    <a href="../paginas/contacto.html" class="nav_item">Contacto</a>
+                    <a href="../paginas/carrito.html" class="nav_item">
+                        <img src="../imagenes/carrito.png" alt="" class="carrito_img">
+                    </a>    
+                </div>
+            </div>  
         </nav>
     </header>
     <div class="contenedor_formulario">
-        <form class="row g-3">
+        <form method="get" enctype="multipart/form-data" action="#" class="row g-3">
             <div class="col-6">
                 <label for="nombre_input" class="form_label">Nombre</label>
-                <input type="nombre" class="form-control" id="nombre_input" placeholder="Escribe tu nombre">
+                <input type="text" class="form-control" id="nombre_input" name="nombre_input" placeholder="Escribe tu nombre">
             </div>
             <div class="col-6">
                 <label for="input_email" class="form_label">Email</label>
-                <input type="email" class="form-control" id="input_email" placeholder="Escribe tu email">
+                <input type="email" class="form-control" id="input_email" name="input_email" placeholder="Escribe tu email">
             </div>
             <div class="col-12">
                 <label for="input_opcion" class="form_label">Elige el tipo de Recomendacion</label>
-                <select class="form-select" id="input_opcion">
-                    <option selected>Elegir opcion</option>
+                <select class="form-select" id="input_opcion" name="input_opcion">
+                    <option disabled selected>Elegir opcion</option>
                     <option value="1">Agregar juego</option>
                     <option value="2">Recomendacion de diseño</option>
                     <option value="3">Agregar metodo de pago</option>
-                    <option value="3">Quieres contactar con nosotros</option>
+                    <option value="4">Quieres contactar con nosotros</option>
                 </select>
             </div> 
             <div class="col-12">
                 <label for="input_porque" class="form_label">Cuentanos el porque</label>
-                <textarea type="text" class="form-control" id="input_porque" rows="2" placeholder="..."></textarea>
+                <textarea type="text" class="form-control" id="input_porque" name="input_porque" rows="2" placeholder="..."></textarea>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">
