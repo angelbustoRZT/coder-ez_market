@@ -8,6 +8,6 @@
     transition-property: background-color, transform;
     &:hover {
         transform: scale(1.1);
-        background-color: #013c79;
+        background-color: $color-principal;
     }
 }
