@@ -2,6 +2,10 @@
   font-family: "Masque";
   src: url(../fuentes/MASQUE__.ttf); }
 
+@media (max-height: 680px) {
+  .boton_play {
+    background-size: 60%; } }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -166,7 +170,8 @@ a {
   background-repeat: no-repeat;
   transition-duration: 600ms;
   transition-timing-function: ease;
-  transition-property: background-color, transform; }
+  transition-property: background-color, transform;
+  min-height: 200px; }
   .boton_pc:hover {
     transform: scale(1.1);
     background-color: #013c79; }
@@ -178,7 +183,8 @@ a {
   background-repeat: no-repeat;
   transition-duration: 600ms;
   transition-timing-function: ease;
-  transition-property: background-color, transform; }
+  transition-property: background-color, transform;
+  min-height: 200px; }
   .boton_play:hover {
     transform: scale(1.1);
     background-color: #013c79; }
@@ -301,6 +307,12 @@ a {
   visibility: visible; }
   .zoom2:hover > .capa3 h3 {
     margin-top: 10%; }
+
+@media (max-width: 520px) {
+  h3 {
+    font-size: 10px; }
+  p {
+    font-size: 15px; } }
 
 .juegos_pc {
   min-height: 600px;
