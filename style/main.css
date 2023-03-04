@@ -15,10 +15,14 @@ body {
 
 .fondo {
   background-image: url(../imagenes/fondo.jpg);
-  background-size: cover; }
+  background-size: contain; }
 
 a {
   text-decoration: none; }
+
+.fondo2 {
+  background-image: url(../imagenes/fondo.jpg);
+  background-size: cover; }
 
 .nav {
   background: linear-gradient(90deg, #013c79 0%, #005fda 50%, #013c79 100%);
