@@ -1,5 +1,10 @@
 .fondo {
     background-image: url(../imagenes/fondo.jpg);
     background-size: contain;
-    
+}
+
+@media (min-width:1100px) {
+    .fondo {
+        background-size: cover;
+    }
 }
