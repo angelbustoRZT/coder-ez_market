@@ -99,7 +99,9 @@ a {
     transition: clip-path 0.5s ease-in-out;
     gap: 0; }
   .nav_input:checked + .nav_menu {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); } }
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  .contenedor_formulario {
+    z-index: -1; } }
 
 .footer {
   background: linear-gradient(90deg, #013c79 0%, #005fda 50%, #013c79 100%);

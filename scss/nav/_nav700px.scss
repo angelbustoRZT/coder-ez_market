@@ -25,4 +25,7 @@
     .nav_input:checked + .nav_menu {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+    .contenedor_formulario {
+        z-index: -1;
+    }
 }
